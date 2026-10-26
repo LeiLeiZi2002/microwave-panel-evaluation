@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>GE Microwave · Interactive Models</title>
+  <meta name="description" content="Three interactive microwave prototypes with cooking controls, defrost, food presets and an independent kitchen timer.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="preview.css">
+  <link rel="stylesheet" href="appliance.css">
+  <link rel="stylesheet" href="panels.css">
+  <script src="appliance.js" defer></script>
+  <script src="simulator.js" defer></script>
+  <script src="panels.js" defer></script>
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="study-brand"><span class="brand-orbit" aria-hidden="true">GE</span><div><p class="eyebrow">INTERFACE STUDY</p><h1>Microwave studio</h1></div></div>
+  </header>
+  <main>
+    <nav class="design-selector" aria-label="Choose a microwave design">
+      <button class="design-choice is-selected" type="button" data-design="keypad" aria-pressed="true"><span>01</span> Keypad</button>
+      <button class="design-choice" type="button" data-design="dials" aria-pressed="false"><span>02</span> Dials</button>
+      <button class="design-choice" type="button" data-design="touchscreen" aria-pressed="false"><span>03</span> Touchscreen</button>
+    </nav>
+    <section class="workbench" aria-labelledby="design-title">
+      <div class="bench-toolbar"><div><span class="model-index" id="model-index">MODEL 01</span><h2 id="design-title">Numeric keypad</h2></div><div class="view-selector" role="group" aria-label="Preview scale"><button type="button" id="reset-model">Reset model</button><button type="button" data-view="whole" aria-pressed="true">Whole appliance</button><button type="button" data-view="detail" aria-pressed="false">Panel detail</button></div></div>
+      <div class="model-viewport" id="model-viewport"><div class="model-canvas" id="model-canvas"></div></div>
+    </section>
+  </main>
+  <noscript><p class="no-script">Please enable JavaScript to view the three microwave models.</p></noscript>
+</body>
+</html>
